@@ -2,7 +2,7 @@
   padding: 2vh 10vw 0;
   width: 100vw;
   height: 22vh;
-  color: white;
+  color: var(--second);
   text-align: center;
   background-color: var(--prime);
 }
@@ -11,8 +11,10 @@
   font-size: 20px;
 }
 
-#credencials .fa {
-  padding: 1vw 1vw;
+#credencials .fab {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 3vw;
   height: 3vw;
   text-align: center;
@@ -23,7 +25,7 @@
   margin: 1vh 1vh;
 }
 
-#credencials .fa:hover {
+#credencials .fab:hover {
   cursor: pointer;
   text-decoration: none;
   opacity: 0.7;
@@ -38,14 +40,10 @@
   background: #55ACEE;
 }
 
-.fa-youtube {
-  background: #bb0000;
+.fa-vk {
+  background: #0077FF;
 }
 
-.fa-instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-}
-
-.fa-skype {
-  background: #00aff0;
+.fa-viber {
+  background: #7360f2;
 }

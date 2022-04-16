@@ -8,14 +8,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/links.css' %}">
     <link rel="stylesheet" href="{% static 'css/credencials.css' %}">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
     <title>{{ title }}</title>
   </head>
-  <body>
   <body onLoad="display(0)">
     <header>
       <div id="svg_header_wave">
@@ -45,11 +45,18 @@
     <div id="credencials">
       <span>Спасите жизни - расскажите о нас!<span>
       <br>
-      <span class="fa fa-facebook"></span>
-      <span href="#" class="fa fa-twitter"></span>
-      <span href="#" class="fa fa-youtube"></span>
-      <span href="#" class="fa fa-instagram"></span>
-      <span href="#" class="fa fa-skype"></span>
+      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+        <span class="fab fa-facebook"></span>
+      </a>
+      <a target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false">
+        <span class="fab fa-twitter"></span>
+      </a>
+      <a href="https://vk.com/share.php?url={{ host }}" target="_blank">
+        <span class="fab fa-vk"></span>
+      </a>
+      <a href="viber://forward?text=Check this out: {{ HOST }}" target="_blank">
+        <span class="fab fa-viber"></span>
+      </a>
       <br>
       <br>
       <h6>Copyright 2022 by "IPLT Alexander Puskin". All Rights Reserved.</h6>

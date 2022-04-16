@@ -1,6 +1,5 @@
 let links = document.getElementById("links")
 
-
 function display(i) {
     if (i === links.children.length) return
 

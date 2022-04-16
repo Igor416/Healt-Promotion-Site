@@ -1,3 +1,12 @@
+#credencials {
+  padding: 2vh 10vw 0;
+  width: 100vw;
+  height: 22vh;
+  color: white;
+  text-align: center;
+  background-color: var(--prime);
+}
+
 #credencials span {
   font-size: 20px;
 }

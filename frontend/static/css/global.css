@@ -1,36 +1,28 @@
+:root {
+  --prime: #19334d;
+  --second: #e6ccb2;
+  --defer: #cd9965;
+  --sum: #32669a;
+}
+
 body {
   margin: 0;
-  background-color: whitesmoke;
+  background-color: var(--defer);
   overflow-x: hidden;
 }
 
 a {
-  color: black;
+  color: var(--prime);
   text-decoration: none;
   background-color: transparent;
+  transition: 0.7s;
 }
 
 a:hover {
-  color: black;
+  color: var(--sum);
   cursor: pointer;
   text-decoration: none;
   background-color: transparent;
-}
-
-header {
-  height: 20vh;
-  width: 100vw;
-}
-
-#links {
-  bottom: 20vh;
-  margin: 15vh 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 15vh 7.5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 #content {
@@ -42,13 +34,4 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-#credencials {
-  padding: 2vh 10vw 0;
-  width: 100vw;
-  height: 22vh;
-  color: white;
-  text-align: center;
-  background-color: #19334d;
 }

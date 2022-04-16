@@ -1,3 +1,14 @@
+#links {
+  bottom: 20vh;
+  margin: 15vh 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 15vh 7.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .link {
   margin-top: 50vh;
   padding: 2vh 1vw;
@@ -7,20 +18,20 @@
   justify-content: top;
   width: 20vw;
   height: 70vh;
-  background-color: white;
-  border-radius: 1%;
+  background-color: var(--second);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 1s;
 }
 
 .link img {
   margin: 2vh 0 5vh;
-  border: 2px solid black;
+  border: 4px solid var(--defer);
   width: 18vw;
   height: 18vw;
   border-radius: 50%;
 }
 
 .link span {
+  color: var(--sum);
   font-size: 20px;
 }

@@ -18,24 +18,27 @@
   <body>
   <body onLoad="display(0)">
     <header>
-      <div id="blob1">
-        <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%">
-          <path fill="#33cc00" d="M425,313Q401,376,346.5,432Q292,488,209,477Q126,466,76.5,398.5Q27,331,33,252Q39,173,94.5,125Q150,77,220,49.5Q290,22,357,63Q424,104,436.5,177Q449,250,425,313Z"></path>
-        </svg>
-      </div>
-      <div id="blob2">
-        <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%">
-          <path fill="#FF0066" d="M427.5,290.5Q377,331,347.5,365Q318,399,268,434Q218,469,167,437Q116,405,77.5,358.5Q39,312,62.5,257Q86,202,94.5,141Q103,80,161.5,60.5Q220,41,273,62.5Q326,84,378,109Q430,134,454,192Q478,250,427.5,290.5Z"></path>
-        </svg>
-      </div>
       <div id="svg_header_wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
-          <path fill="#0099ff" d="M0,160L34.3,170.7C68.6,181,137,203,206,202.7C274.3,203,343,181,411,170.7C480,160,549,160,617,176C685.7,192,754,224,823,202.7C891.4,181,960,107,1029,90.7C1097.1,75,1166,117,1234,133.3C1302.9,149,1371,139,1406,133.3L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+          <path fill="#e6ccb2" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,112C384,107,480,117,576,117.3C672,117,768,107,864,112C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
         </svg>
       </div>
+      {% if home %}
       <span id="title">Вредные привычки</span>
-      <span id="page"></span>
+      {% else %}
+      <span id="title"><a href="{% url 'home' %}">Вредные привычки <i class="fa fa-home"></i></a></span>
+      {% endif %}
+
+      {% if not home %}
+      <span id="page">{{ title }}</span>
+      {% endif %}
+      </span>
       <span id="quote"><i>"Кто не курит и не пьет, тот здоровым и помрет"</i></span>
+      <span id="logo">
+        <a href="https://www.who.int/ru" target="_blank">
+          <i class='fa fa-heartbeat'></i>
+        </a>
+      </span>
     </header>
     {% block content %}
     {% endblock %}

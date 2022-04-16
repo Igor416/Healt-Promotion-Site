@@ -1,0 +1,42 @@
+#credencials span {
+  font-size: 20px;
+}
+
+#credencials .fa {
+  padding: 1vw 1vw;
+  width: 3vw;
+  height: 3vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  transition: 1.4;
+  margin: 1vh 1vh;
+}
+
+#credencials .fa:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.7;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-youtube {
+  background: #bb0000;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.fa-skype {
+  background: #00aff0;
+}

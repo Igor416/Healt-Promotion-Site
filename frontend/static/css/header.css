@@ -1,0 +1,67 @@
+#svg_header_wave {
+  height: inherit;
+  width: 100vw;
+  animation: wave 20s linear infinite;
+}
+
+#svg_header_wave svg {
+  opacity: 0.75;
+  background-color: #bf00ff;
+  transform: scaleX(1.25);
+}
+
+#blob1, #blob2 {
+  position: absolute;
+  opacity: 0.8;
+  animation: blob 11s linear infinite;
+}
+
+#blob1 {
+  left: 2vw;
+  top: 0vh;
+}
+
+#blob2 {
+  right: 0vw;
+  top: 4vh;
+  animation-delay: 3.2s;
+}
+
+@keyframes wave {
+  0% {transform: translateX(0px)}
+  25% {transform: translateX(100px)}
+  50% {transform: translateX(10px)}
+  75% {transform: translateX(75px)}
+  100% {transform: translateX(0px)}
+}
+
+@keyframes blob {
+  0% {transform: scale(1, 1) translate(0px, 0px);}
+  25% {transform: scale(1.35, 1.23) translate(37px, 22px);}
+  50% {transform: scale(0.93, 1.04) translate(-2px, 4px);}
+  75% {transform: scale(1.17, 1.12) translate(14px, 10px);}
+  100% {transform: scale(1, 1) translate(0px, 0px);}
+}
+
+header span {
+  position: absolute;
+  font-family: Comic Sans MS;
+}
+
+#title {
+  left: 6vw;
+  top: 3vh;
+  font-size: 42px;
+}
+
+#page {
+  left: 28vw;
+  top: 24vh;
+  font-size: 32px;
+}
+
+#quote {
+  right: 16vw;
+  top: 9vh;
+  font-size: 24px;
+}

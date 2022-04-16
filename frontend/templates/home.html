@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+<div id="links">
+  <div class="link">
+    <a href="alcohol.html">
+      <h3>Алкозависимость</h3>
+      <img src="{% static 'media/drinking.jpg' %}">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+    </a>
+  </div>
+  <div class="link">
+    <a href="smoking.html">
+      <h3>Курение</h3>
+      <img src="{% static 'media/smoking.jpg' %}">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+    </a>
+  </div>
+  <div class="link">
+    <a href="drugs.html">
+      <h3>Наркозависимость</h3>
+      <img src="{% static 'media/doing_drugs.jpg' %}">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+    </a>
+  </div>
+</div>
+{% endblock %}

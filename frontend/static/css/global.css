@@ -24,14 +24,3 @@ a:hover {
   text-decoration: none;
   background-color: transparent;
 }
-
-#content {
-  bottom: 20vh;
-  margin: 15vh 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 15vh 7.5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}

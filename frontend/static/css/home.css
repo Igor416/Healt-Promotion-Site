@@ -1,0 +1,92 @@
+#links {
+  width: 100vw;
+  height: 100vh;
+  margin: 15vh 0;
+  padding: 15vh 7.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link {
+  margin-top: 50vh;
+  padding: 2vh 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  width: 20vw;
+  height: 70vh;
+  background-color: var(--second);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 1s;
+}
+
+.link img {
+  margin: 2vh 0 5vh;
+  border: 4px solid var(--defer);
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+}
+
+.link span {
+  color: var(--sum);
+  font-size: 20px;
+}
+
+#health {
+  height: 100vh;
+  width: 100vw;
+  padding: 5vh 7.5vw;
+  background-color: var(--prime);
+  color: var(--defer);
+}
+
+#help {
+  height: 68vh;
+  width: 85vw;
+  margin: 5vh 7.5vw;
+  padding: 2vh 3vw;
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: var(--second);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--sum);
+}
+
+#appeal {
+  font-size: 32px;
+}
+
+#form {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+}
+
+#info, #message {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  margin-top: 4vh;
+  height: 54vh;
+  width: 35vw;
+  text-align: left;
+}
+
+.form-control:focus {
+  color: var(--sum);
+  background-color: var(--second);
+}
+
+#send_button {
+  align-self: flex-end;
+  color: var(--second);
+  background-color: var(--sum);
+  font-size: 32px;
+}

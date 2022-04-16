@@ -25,4 +25,58 @@
     </a>
   </div>
 </div>
+<div id="health">
+</div>
+<div id="help">
+  <span id="appeal">Если вы или ваши близкие страдаете от перечисленных зависимостей,<br> то заполните и отошлите форму нашим сотрудникам!</span>
+  <form id="form">
+    <div id="message">
+      <ul>
+        <li>
+          <label for="person">Ваше ФИО:</label><br>
+          <input type="text" name="name" class="form-control" required>
+        </li>
+        <li>
+          <label for="person">Ваш номер телефона:</label><br>
+          <input type="text" name="phone" class="form-control" required>
+        </li>
+        <li>
+          <label for="person">Опишите вашу ситуацию:</label><br>
+          <textarea style="height: 15vh" type="text" name="problem" class="form-control"></textarea>
+        </li>
+      </ul>
+    </div>
+    <div id="info">
+      <ul>
+        <li>
+          <label for="person">Зависимость у вас?</label><br>
+          <label for="person">Да</label>
+          <input type="radio" name="person" value="Да" required>
+          <span>&nbsp&nbsp&nbsp</span>
+          <label for="person">У родственника</label>
+          <input type="radio" name="person" value="У родственника" required>
+          <span>&nbsp&nbsp&nbsp</span>
+          <label for="person">У друга/подруги</label>
+          <input type="radio" name="person" value="У друга/подруги" required>
+        </li>
+        <li>
+          <label for="age">Вам есть 18?</label><br>
+          <label for="age">Да</label>
+          <input type="radio" name="age" value="Да" required>
+          <span>&nbsp&nbsp&nbsp</span>
+          <label for="age">Нет</label>
+          <input type="radio" name="age" value="Нет" required>
+        </li>
+        <li>
+          <label for="time">Сколько лет наблюдается зависимость?</label><br>
+          <input type="range" name="time" min="1" max="99" onchange="adjustTime(this.value)" required>
+          <span>&nbsp&nbsp&nbsp</span>
+          <label for="time" id="time">1 месяц</label>
+        </li>
+      </ul>
+      <button id="send_button" class="btn">Отправить</button>
+    </div>
+  </form>
+  </div>
+</div>
 {% endblock %}

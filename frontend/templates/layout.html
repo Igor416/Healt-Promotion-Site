@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'css/links.css' %}">
+    <link rel="stylesheet" href="{% static css_name %}">
     <link rel="stylesheet" href="{% static 'css/credencials.css' %}">
     <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
     <title>{{ title }}</title>
@@ -24,11 +24,10 @@
         </svg>
       </div>
       {% if home %}
-      <span id="title">Вредные привычки</span>
+      <span id="title">Как бороться с вредными привычками?</span>
       {% else %}
-      <span id="title"><a href="{% url 'home' %}">Вредные привычки <i class="fa fa-home"></i></a></span>
+      <span id="title"><a href="{% url 'home' %}">Как бороться с вредными привычками? <i class="fa fa-home"></i></a></span>
       {% endif %}
-
       {% if not home %}
       <span id="page">{{ title }}</span>
       {% endif %}
@@ -40,8 +39,10 @@
         </a>
       </span>
     </header>
-    {% block content %}
-    {% endblock %}
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
     <div id="credencials">
       <span>Спасите жизни - расскажите о нас!<span>
       <br>

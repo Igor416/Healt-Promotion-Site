@@ -43,3 +43,21 @@ header span {
   font-size: 42px;
   transform: scale(1.5);
 }
+
+@media only screen and (max-width: 1560px) {
+  #title {
+    font-size: 32px;
+  }
+
+  #page {
+    font-size: 24px;
+  }
+
+  #quote {
+    font-size: 18px;
+  }
+
+  #logo {
+    font-size: 32px;
+  }
+}

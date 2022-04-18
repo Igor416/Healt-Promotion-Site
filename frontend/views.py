@@ -21,7 +21,7 @@ def alcohol(request):
         'host': HOST,
         'css_name': create_file_name('alcohol', 'css'),
         'js_name': create_file_name('alcohol', 'js'),
-        'title': 'Алкозависимость'
+        'title': 'Алкоголизм'
     }
     return render(request, 'alcohol.html', context=context)
 
@@ -41,6 +41,6 @@ def drugs(request):
         'host': HOST,
         'css_name': create_file_name('drugs', 'css'),
         'js_name': create_file_name('drugs', 'js'),
-        'title': 'Наркозависимость'
+        'title': 'Наркомания'
     }
     return render(request, 'drugs.html', context=context)

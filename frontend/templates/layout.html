@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static css_name %}">
     <link rel="stylesheet" href="{% static 'css/credencials.css' %}">
-    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+    <link rel="icon" type="image/x-icon" href="{% static 'media/favicon.svg' %}">
     <title>{{ title }}</title>
   </head>
   <body onLoad="display(0)">
@@ -62,6 +62,6 @@
       <br>
       <h6>Copyright 2022 by "IPLT Alexander Puskin". All Rights Reserved.</h6>
     </div>
-    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static js_name %}"></script>
   </body>
 </html>

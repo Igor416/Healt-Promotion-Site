@@ -38,9 +38,39 @@
 #health {
   height: 100vh;
   width: 100vw;
-  padding: 5vh 7.5vw;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
   background-color: var(--prime);
   color: var(--defer);
+}
+
+#health_text, #health_slideshow {
+  height: 90vh;
+  width: 55vw;
+  padding: 2.5vh 2.5vw;
+}
+
+#health_slideshow {
+  height: 90vh;
+  width: 35vw;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  padding: 2.5vh 2.5vw;
+}
+
+#health_slideshow img {
+  object-fit: cover;
+  height: 85vh;
+  width: 0vw;
+}
+
+#health_title {
+  font-size: 42px;
 }
 
 #help {

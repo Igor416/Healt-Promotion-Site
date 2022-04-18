@@ -26,6 +26,20 @@
   </div>
 </div>
 <div id="health">
+  <div id="health_text">
+    <span id="health_title">Я выбираю Здоровый образ жизни</span>
+    <br>
+    <br>
+    <p>Здорóвый óбраз жи́зни (ЗОЖ) — образ жизни человека, помогающий сохранить здоровье и снизить риск неинфекционных заболеваний (НИЗ), нормализовать режим сна, путём контроля над поведенческими факторами.</p>
+    <p>Здоровый образ жизни подразумевает сильную выдержку и характер. Отказ от табака и употребления алкоголя, рациональное питание, физическую активность (физические упражнения, спорт и тому подобное), укрепление психического здоровья и другие меры по укреплению здоровья.</p>
+    <p>Принципы образа жизни обычно закладываются в молодом возрасте, поэтому для формирования здорового образа жизни важным является формирование здорового образа в этом возрасте — привычки, сформировавшиеся в молодости, зачастую сохраняются и во взрослой жизни.</p>
+  </div>
+  <div id="health_slideshow">
+    <img src="{% static 'media/health1.jpg' %}" class="health-image" style="width: 30vw">
+    <img src="{% static 'media/health2.jpg' %}" class="health-image">
+    <img src="{% static 'media/health3.jpg' %}" class="health-image">
+    <img src="{% static 'media/health1.jpg' %}" class="health-image">
+  </div>
 </div>
 <div id="help">
   <span id="appeal">Если вы или ваши близкие страдаете от перечисленных зависимостей,<br> то заполните и отошлите форму нашим сотрудникам!</span>
@@ -42,7 +56,7 @@
         </li>
         <li>
           <label for="person">Опишите вашу ситуацию:</label><br>
-          <textarea style="height: 15vh" type="text" name="problem" class="form-control"></textarea>
+          <textarea style="height: 15vh" type="text" name="problem" class="form-control" required></textarea>
         </li>
       </ul>
     </div>
